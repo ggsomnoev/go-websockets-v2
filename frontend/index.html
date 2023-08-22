@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Websockets with GO</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+    </head>
+    <body>
+        <h3 id="ws-status">WS: not connected</h3>
+        <div id="login-wrapper">
+            <div class="login-container">
+                <h2>Login (test / 123)</h2>
+                <form id="chat-login">
+                    <input type="text" id="username" name="username" placeholder="Username" required><br>
+                    <input type="password" id="password" name="password" placeholder="Password" required><br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div id="chat-wrapper">
+            <div class="chat-container" id="chatContainer">
+                <!-- Chat messages will be added here dynamically -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </body>
+</html>
